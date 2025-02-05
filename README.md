@@ -22,3 +22,4 @@ import tensorflow as tf
 **Implicit Broadcasting:** The code demonstrates that broadcasting happens implicitly during the addition. You don't need a separate broadcasting function.
 
 **Error Handling Note:** The explanation mentions that TensorFlow will raise an error if the shapes are not compatible for broadcasting, which is important for users to know.
+![alt text](./output/accuracy_5000images_15epochs.png?raw=true "Model accuracy with 5000 images")
