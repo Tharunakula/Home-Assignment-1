@@ -1,14 +1,14 @@
-**CS5720 Neural network and Deep learning,
+**CS5720 Neural network and Deep learning,**
 
-CRN:-23848
+**CRN:-23848**
 
-Name:- Akula Tharun.
+**Name:- Akula Tharun.**
 
-student ID:-700759411.
+**student ID:-700759411.**
 
-Home Assignment 1.
-**
-1.Tensor Manipulations & Reshaping****
+**Home Assignment 1.**
+
+**1.Tensor Manipulations & Reshaping**
 
 Clearer Output: The output now clearly labels each tensor and its rank/shape, making it easier to follow the transformations.
 
@@ -32,8 +32,8 @@ Integer y_true for CCE:The code now explicitly casts y_true to integers using tf
 
 NumPy Conversion: The .numpy() method is used to convert TensorFlow tensors to NumPy arrays for plotting with Matplotlib, which expects NumPy arrays.
 
-**3.Train a Model with Different Optimizers
-**
+**3.Train a Model with Different Optimizers**
+
 Separate Examples:The code now has two distinct examples: one for binary classification and one for multi-class classification.This is much clearer and avoids the previous confusion.
 
 Correct Loss Functions:
