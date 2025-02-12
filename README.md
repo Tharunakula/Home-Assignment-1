@@ -58,3 +58,18 @@ Training:The model.fit() method is called with the tensorboard_callback included
 
 Launching TensorBoard:The code now prints clear instructions on how to launch TensorBoard.You must open a terminal or command prompt in the same directory as your Jupyter Notebook.Then,run the command:
 
+**4.1. What patterns do you observe in the training and validation accuracy curves?**
+
+Ideally, both training and validation accuracy should increase over epochs. The validation accuracy might plateau or even slightly decrease after a certain point, even if the training accuracy continues to rise. This is a sign of potential overfitting. Look for how closely the training and validation curves follow each other. If they diverge significantly, that's another sign of overfitting.
+
+**4.2. How can you use TensorBoard to detect overfitting?**
+
+*Diverging Accuracy/Loss: The most common way is by observing a significant gap between training and validation accuracy/loss. As mentioned above, if training accuracy keeps increasing while validation accuracy plateaus or decreases, it suggests the model is starting to memorize the training data and not generalizing well.
+
+*Histograms/Distributions: You can look at the histograms and distributions of weights and biases. If they become very skewed or show unusual patterns, it could indicate problems with training. Sudden shifts in distributions during training can also be a warning sign.
+
+*Graphs: While not directly related to detecting overfitting, the graph view can help you understand the model structure, which can be useful in preventing overfitting (e.g., by simplifying the model).
+
+**4.3. What happens when you increase the number of epochs?**
+
+If the model is not already overfitting, increasing the number of epochs initially can lead to further improvements in both training and validation accuracy. However, eventually, if you keep training for too many epochs, the model will almost certainly start to overfit. You'll see the training accuracy continue to increase (or remain very high), while the validation accuracy will start to decrease. This is why it's important to monitor the validation accuracy in TensorBoard and stop training when it starts to decline. This is called "early stopping" and is a common technique to prevent overfitting.
